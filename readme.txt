@@ -1,4 +1,14 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Creating a new branch is quick and simple.
-Hello world.
+#基于AngularJS的信息管理系统
+
+--基本功能
+  1.学生管理
+  2.教师管理
+  3.栏目管理
+  4.文章管理
+  5.学生统计
+  
+  --学生管理
+	1.学生的增删改查
+	2.设为组长
+	
+  --教师管理
