@@ -1,4 +1,5 @@
 #基于AngularJS的信息管理系统
+[demo](https://kemanchen.github.io/MsgManagerSystem/index.html)
 
 --基本功能<br/>
   1.学生管理<br/>
