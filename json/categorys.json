@@ -1,0 +1,26 @@
+[{
+  "id":1001,
+  "name":"WEBUI开发",
+  "cord":1,
+  "parent":null
+},{
+  "id":1002,
+  "name":"JAVAEE开发",
+  "cord":2,
+  "parent":null
+},{
+  "id":1003,
+  "name":"IOS开发",
+  "cord":3,
+  "parent":null
+},{
+  "id":1004,
+  "name":"Android开发",
+  "cord":4,
+  "parent":null
+},{
+  "id":1005,
+  "name":"PHP开发",
+  "cord":5,
+  "parent":null
+}]

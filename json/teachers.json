@@ -1,0 +1,21 @@
+[{
+  "id":1001,
+  "name":"丁长明",
+  "gender":"男",
+  "rank":"部门总监",
+  "email":"dingcm@briup.com",
+  "record":"安徽省十大优秀教师",
+  "picture":"images/丁长明.gif",
+  "salary":9000,
+  "daySalary":100
+},{
+  "id":1002,
+  "name":"刘涛",
+  "gender":"男",
+  "rank":"教学总监",
+  "email":"liutao@briup.com",
+  "record":"上海市优秀青年教师",
+  "picture":"images/刘涛.gif",
+  "salary":8000,
+  "daySalary":80
+}]

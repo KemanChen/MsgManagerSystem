@@ -1,0 +1,46 @@
+[{
+  "cId":1,
+  "cName":"学生管理",
+  "url":"#/stuMan",
+  "parent":null
+},{
+  "cId":2,
+  "cName":"教师管理",
+  "url":null,
+  "parent":null
+},{
+  "cId":3,
+  "cName":"信息管理",
+  "url":"#/teaInfoMan",
+  "parent":2
+},{
+  "cId":4,
+  "cName":"薪资管理",
+  "url":"#/teaSalaryMan",
+  "parent":2
+},{
+  "cId":5,
+  "cName":"栏目管理",
+  "url":"#/category",
+  "parent":null
+},{
+  "cId":6,
+  "cName":"文章管理",
+  "url":null,
+  "parent":null
+},{
+  "cId":7,
+  "cName":"文章发布",
+  "url":"#/publisur",
+  "parent":6
+},{
+  "cId":8,
+  "cName":"文章管理",
+  "url":"#/essay",
+  "parent":6
+},{
+  "cId":9,
+  "cName":"学生统计",
+  "url":"#/pie",
+  "parent":null
+}]

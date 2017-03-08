@@ -1,0 +1,88 @@
+<!--搜索框-->
+<div class="collapse navbar-collapse">
+    <form action="javascript:void(0)" class="navbar-form navbar-left">
+        <div class="form-group">
+            <select name="" class="form-control">
+                <option value="">请选择</option>
+                <option value="name">姓名</option>
+                <option value="gender">性别</option>
+            </select>
+            <input class="form-control" type="text" placeholder="search"/>
+        </div>
+        <button class="btn btn-primary" type="submit">搜索</button>
+    </form>
+</div>
+<style>
+    img{
+        width: 120px;
+        height: 120px;
+    }
+</style>
+<div class="row">
+    <div class="col-xs-12">
+        <ul class="media-list">
+            <li class="media well" ng-repeat="item in data.teachers">
+                <input class="pull-left" type="checkbox" ng-model="item.checked"/>
+                <a href="" class="pull-left">
+                    <img class="media-object" src="{{item.picture}}"  alt=""/>
+                </a>
+                <div class="media-body">
+                    <h3>{{item.name}}</h3>
+                    性别：{{item.gender}}
+                    <br>
+                    职位：{{item.rank}}
+                    <br>
+                    email：{{item.email}}
+                    <br>
+                    个人履历：{{item.record}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="btn-group">
+    <button class="btn btn-primary" ng-click="data.showAddModal()">添加</button>
+    <button class="btn btn-primary" ng-click="data.delTea()">删除</button>
+    <button class="btn btn-primary" ng-click="data.showUpdModal()">修改</button>
+</div>
+
+<div class="modal fade" id="teaModal" tabindex="-1">
+    <div class="modal-dialog"  style="width: 300px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{data.modalTitle}}</h4>
+            </div>
+            <form action="javascript:void(0);" ng-submit="data.option=='upd'?data.updTea():data.addTea()">
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-addon">姓名</span>
+                        <input class="form-control" type="text" ng-model="data.newTea.name" ng-readonly="data.option=='add'?false:true">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">性别</span>
+                        <input class="form-control" type="text" ng-model="data.newTea.gender">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">职位</span>
+                        <input class="form-control" type="text" ng-model="data.newTea.rank">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">email</span>
+                        <input class="form-control" type="email" ng-model="data.newTea.email">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">描述</span>
+                        <input class="form-control" type="text" ng-model="data.newTea.record">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary"
+                            type="submit">提交</button>
+                    <button class="btn btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
